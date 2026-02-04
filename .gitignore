@@ -1,0 +1,15 @@
+# Configuration files with sensitive data
+config.sh
+
+# Deployment staging directory
+deployment/
+
+# Local patches (optional - uncomment if you want to exclude)
+# patches/
+
+# RSA keys and credentials
+*.pem
+*.key
+
+# Build artifacts
+*.tar.gz
