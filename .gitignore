@@ -2,7 +2,7 @@
 config.sh
 
 # Deployment staging directory
-deployment/
+deployment/!.gitkeep
 
 # Local patches (optional - uncomment if you want to exclude)
 # patches/
