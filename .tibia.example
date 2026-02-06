@@ -1,0 +1,117 @@
+# Tibia Server Configuration File
+# Copy this file to .tibia and modify as needed
+
+# =============================================================================
+# Paths
+# =============================================================================
+
+binpath = "/path/to/bin"
+datapath = "/path/to/data"
+logpath = "/path/to/logs"
+mappath = "/path/to/map"
+origmappath = "/path/to/origmap"
+monsterpath = "/path/to/monsters"
+npcpath = "/path/to/npcs"
+savepath = "/path/to/save"
+userpath = "/path/to/users"
+
+# =============================================================================
+# Network
+# =============================================================================
+
+gameport = 7171
+gameaddress = "0.0.0.0"
+adminport = 7172
+adminaddress = "0.0.0.0"
+
+# =============================================================================
+# Server Settings
+# =============================================================================
+
+world = "My Server"
+state = public
+beat = 200
+debuglevel = 1
+
+# =============================================================================
+# Player Limits
+# =============================================================================
+
+# maxplayers = 100
+# maxnewbies = 50
+# premiumplayerbuffer = 10
+# premiumnewbiebuffer = 5
+
+# =============================================================================
+# Rates
+# =============================================================================
+
+# Experience rate - can be staged by level
+# Simple rate for all levels:
+experiencerate = 1
+
+# Or staged rates (min_level, max_level, rate) - 0 means no upper limit:
+# experiencerate = (1, 50, 50)
+# experiencerate = (51, 100, 25)
+# experiencerate = (101, 200, 10)
+# experiencerate = (201, 0, 5)
+
+# Loot drop rate multiplier (capped at 100% = 1000)
+lootrate = 1
+
+# Skill training rates
+magicrate = 1
+meleerate = 1
+distancerate = 1
+shieldingrate = 1
+
+# =============================================================================
+# Death Penalty
+# =============================================================================
+
+# Experience and skill loss on death (percentage)
+# Non-promoted players lose this percentage
+deathpenalty = 10
+
+# Promoted players lose this percentage
+deathpenaltypromoted = 7
+
+# Note: Blessings still reduce loss by 1% each (max 5 blessings)
+# Set to 0 to disable exp/skill loss entirely
+
+# Item drop chance on death
+# This is "1 in N" chance for each non-container item
+# 10 = 10% chance, 5 = 20% chance, 0 = no random drops
+itemdropchance = 10
+
+# Whether containers (backpacks) always drop on death
+# true = containers always drop, false = containers follow itemdropchance
+dropcontainersondeath = true
+
+# Note: Amulet of Loss and KEEP_INVENTORY right prevent all item loss
+# Playerkiller flag forces all items to drop regardless of settings
+
+# =============================================================================
+# Databases
+# =============================================================================
+
+# admindatabase = (mysql, "database", "login", "password", "host", "port")
+# volatiledatabase = (mysql, "database", "login", "password", "host", "port")
+# webdatabase = (mysql, "database", "login", "password", "host", "port")
+# forumdatabase = (mysql, "database", "login", "password", "host", "port")
+# managerdatabase = (mysql, "database", "login", "password", "host", "port")
+
+# =============================================================================
+# Query Managers
+# =============================================================================
+
+# querymanagerport = 7173
+# querymanageraddress = "0.0.0.0"
+# querymanageradminpw = "password"
+# querymanagergamepw = "password"
+# querymanagerwebpw = "password"
+
+# querymanager = {
+#     ("host1", 7173, "password")
+#     ("host2", 7173, "password")
+# }

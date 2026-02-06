@@ -14,3 +14,5 @@ deployment/!.gitkeep
 
 # Build artifacts
 *.tar.gz
+
+backups
